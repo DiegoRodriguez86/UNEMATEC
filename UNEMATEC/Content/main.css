@@ -71,7 +71,7 @@ input#pass{
     border-radius: 10px;
     font-size: 1em;
 }
-form#frmLogin button{
+button#btnInises {
     width: 63%;
     height: 2.75em;
     margin: 2.5em auto .5em;
@@ -81,12 +81,12 @@ form#frmLogin button{
     box-sizing: border-box;
     box-shadow: none;
     cursor: pointer;
-	border: none;
+    border: none;
     outline: none;
     font-size: 1em;
 }
-form#frmLogin button:hover{
-    filter:opacity(.7);
+button#btnInises:hover {
+    filter: opacity(.7);
 }
 /*  END LOGIN */
 /*    INICIO REGISTRO */

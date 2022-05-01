@@ -13,6 +13,7 @@ namespace UNEMATEC.Controllers
         // GET: Login
         public ActionResult Index()
         {
+            Session.Clear();
             return View();
         }
 
@@ -21,14 +22,20 @@ namespace UNEMATEC.Controllers
         {
             cLogin cl = new cLogin();
             int acces = cl.GetAcceso(model);
-            if (acces == 1)
+            if (acces !=0)
             {
                 return RedirectToAction("Index", "InfoSindicalizados", new { model = model });
             }
             else
             {
+                CreaVariablesSession(acces);
                 return RedirectToAction("Index");
             }
+        }
+
+        public void CreaVariablesSession(int idUser)
+        {
+            Session["sIdUsuario"] = idUser;
         }
     }
 }

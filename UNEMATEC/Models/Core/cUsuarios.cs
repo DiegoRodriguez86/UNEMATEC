@@ -13,13 +13,13 @@ namespace UNEMATEC.Models.Core
         {
             try
             {
-                using(UNEMATECEntities ctx = new UNEMATECEntities())
+                using(UNEMATECEntities1 ctx = new UNEMATECEntities1())
                 {
 
                     Usuarios us = new Usuarios();
-                    us.Nombre = model.Nombre;
-                    us.ApellidoPaterno = model.ApellidoPaterno;
-                    us.ApellidoPaterno = model.ApellidoPaterno;
+                    us.Nombre = model.Nombre.ToUpper();
+                    us.ApellidoPaterno = model.ApellidoPaterno.ToUpper();
+                    us.ApellidoMaterno = model.ApellidoMaterno.ToUpper();
                     us.CURP = model.CURP;
                     us.RFC = model.RFC;
                     us.CorreoElectronico = model.Correo;
@@ -27,6 +27,7 @@ namespace UNEMATEC.Models.Core
                     us.TelefonoCelular = model.TelefonoCelular;
                     us.IdEstatus = 1;
                     us.FechaCaptura = DateTime.Now;
+                    ctx.Usuarios.Add(us);
                     ctx.SaveChanges();
                 }
                 return 1;

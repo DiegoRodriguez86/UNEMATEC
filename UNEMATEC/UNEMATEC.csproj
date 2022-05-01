@@ -130,19 +130,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\InfoSindicalizadosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LogOutController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BD\Model1.Context.cs">
+    <Compile Include="Models\BD\Usuarios.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>Usuarios.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BD\Model1.Designer.cs">
+    <Compile Include="Models\BD\Usuarios.cs">
+      <DependentUpon>Usuarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BD\Usuarios.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Usuarios.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BD\Usuarios1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Usuarios.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Core\cLogin.cs" />
     <Compile Include="Models\Core\cUsuarios.cs" />
@@ -155,23 +164,30 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\BD\Model1.Context.tt">
+    <Content Include="Models\BD\Usuarios.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Usuarios.edmx</DependentUpon>
+      <LastGenOutput>Usuarios.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BD\Usuarios.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Usuarios.edmx</DependentUpon>
+      <LastGenOutput>Usuarios1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\BD\Model1.edmx">
+    <EntityDeploy Include="Models\BD\Usuarios.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Usuarios.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\BD\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
+    <Content Include="Models\BD\Usuarios.edmx.diagram">
+      <DependentUpon>Usuarios.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -197,12 +213,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\InfoSindicalizados\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
+    <Content Include="Views\InfoSindicalizados\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\LogOut\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

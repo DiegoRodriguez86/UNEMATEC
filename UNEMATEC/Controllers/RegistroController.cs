@@ -17,10 +17,16 @@ namespace UNEMATEC.Controllers
         }
 
         [HttpPost]
-        public void Index(mUsuarios model)
+        public ActionResult Index(mUsuarios model)
         {
             cUsuarios cu = new cUsuarios();
             int error = cu.AddUsuario(model);
+            if (error == 0)
+            { return RedirectToAction("Index"); }
+            else
+            {
+                return RedirectToAction("Index", "Login");
+            }
         }
     }
 }

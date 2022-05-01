@@ -11,14 +11,14 @@ namespace UNEMATEC.Models.Core
     {
         public int GetAcceso(mLogin model)
         {
-            using (UNEMATECEntities ctx = new UNEMATECEntities())
+            using (UNEMATECEntities1 ctx = new UNEMATECEntities1())
             {
-                var acces = ctx.Usuarios.Where(p => p.CorreoElectronico == model.Correo && p.Password == model.Password && p.IdEstatus == 1).First();
-                if (acces != null)
+                try
                 {
+                    var acces = ctx.Usuarios.Where(p => p.CorreoElectronico == model.Correo && p.Password == model.Password && p.IdEstatus == 1).First();
                     return acces.IdUsuario;
                 }
-                else
+                catch
                 {
                     return 0;
                 }
