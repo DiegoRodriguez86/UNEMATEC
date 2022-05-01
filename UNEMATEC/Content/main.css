@@ -1,0 +1,252 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* LOGIN */
+div#container{
+    align-items: center;
+    align-content: center;
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+}
+div#formLogin{
+    margin: 0 auto;
+    padding: 0;
+    width: 55%;
+    height: 50%;
+    min-height: 30em;
+    display: inline-table;
+    box-shadow: 3px 3px 8px 3px rgb(0 0 0 / 10%);
+}
+div#colorbox{
+    width: 40%;
+}
+div#infoBox{
+    width: 60%;
+}
+div#colorbox,
+div#infoBox{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+div#colorbox p{
+    font-weight: 400;
+    font-size: 3em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+div#infoBox h2{
+    margin: .5em 0 0 0;
+    font-size: 2.5em;
+}
+div#infoBox h3{
+    margin: .5em 0;
+    font-size: 1.5em;
+}
+div#infoBox label{
+    margin: 1em 0 0.5em;
+    display: block;
+}
+form#frmLogin{
+    margin: 2em auto;
+}
+form#frmLogin p{
+    font-size: .75em;
+}
+input#mail,
+input#pass{
+    width: 60%;
+    height: 2.5em;
+    border: 1px solid #d3d3d3;
+    padding-left: 1em;
+    border-radius: 10px;
+    font-size: 1em;
+}
+form#frmLogin button{
+    width: 63%;
+    height: 2.75em;
+    margin: 2.5em auto .5em;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #192a56;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+	border: none;
+    outline: none;
+    font-size: 1em;
+}
+form#frmLogin button:hover{
+    filter:opacity(.7);
+}
+/*  END LOGIN */
+/*    INICIO REGISTRO */
+div#formSignUp{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 30em;
+    display: inline-table;
+}
+form#frmSignUp{
+    border: 1px solid #d3d3d3;
+    width: 75%;
+    margin: 1.5em auto;
+    border-radius: 20px;
+    padding: 2em;
+}
+div#colorline{
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1594323713852-9626155bfd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#formBox{
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+div#divFormSU{
+    width: 70%;
+    margin: 0 auto;
+    display: inline-grid;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+div#divFormSU h2{
+    margin: .5em 0 0 0;
+    font-size: 2.5em;
+}
+div#divFormSU h3{
+    margin: .5em 0 1em;
+    font-size: 1.5em;
+}
+div#divFormSU label{
+    width: 25%;
+    margin: 1em 1em 0.5em;
+    display: inline-block;
+    text-align: left;
+}
+form#frmSignUp input{
+    width: 50%;
+    height: 2.5em;
+    border: 1px solid #d3d3d3;
+    padding-left: 1em;
+    border-radius: 10px;
+    font-size: 1em;
+}
+form#frmSignUp button{
+    width: 40%;
+    height: 3em;
+    margin: 2.5em auto .5em;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #192a56;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+	border: none;
+    outline: none;
+    font-size: 1em;
+    
+}
+form#frmSignUp button:hover{
+    filter:opacity(.7);
+}
+/*  FIN REGISTRO */
+a{
+    color: #212529 !important;
+}
+a,a:hover,a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0 0;
+}
+.nav-tabs .nav-link.active{
+	background-color: #fafafa;
+	border-color: #dee2e6 #dee2e6 #fafafa;
+}
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+.navLine{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted #ddd;
+    margin: 5px 0;
+}
+div#content,
+div#container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+div#divContent{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+a#goodbye{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+a#goodbye:hover{
+    text-decoration: underline;
+}
+div#divContent h2{
+    font-size: 2em;
+    margin: 1em auto;
+}
+button#btnDropdown1,
+button#btnDropdown2{
+	background-color: #fafafa;
+    color: #575756;
+    border: none!important;
+    border-radius: 50%;
+    margin: 0;
+    transition: all 0.3s;
+}
+button#btnDropdown1:hover,
+button#btnDropdown1:focus,
+button#btnDropdown1:active{
+	border: none!important;
+	outline: none!important;
+	background-color: rgba(87, 87, 86, 0.1) !important;
+	opacity: 0.5% !important;
+    color: #575756 !important; 
+}
