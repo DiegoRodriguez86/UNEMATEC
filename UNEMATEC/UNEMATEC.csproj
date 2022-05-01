@@ -144,6 +144,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Core\cLogin.cs" />
+    <Compile Include="Models\Core\cUsuarios.cs" />
+    <Compile Include="Models\ViewModels\mLogin.cs" />
+    <Compile Include="Models\ViewModels\mUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,14 +197,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\InfoSindicalizados\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Registro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Core\" />
-    <Folder Include="Models\ViewModels\" />
-    <Folder Include="Views\InfoSindicalizados\" />
-    <Folder Include="Views\Login\" />
-    <Folder Include="Views\Registro\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

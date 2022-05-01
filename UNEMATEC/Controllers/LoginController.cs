@@ -17,10 +17,18 @@ namespace UNEMATEC.Controllers
         }
 
         [HttpPost]
-        public void Index(mUsuarios model)
+        public ActionResult Index(mLogin model)
         {
-            cUsuarios cu = new cUsuarios();
-            int error = cu.AddUsuario(model);
+            cLogin cl = new cLogin();
+            int acces = cl.GetAcceso(model);
+            if (acces == 1)
+            {
+                return RedirectToAction("Index", "InfoSindicalizados", new { model = model });
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
     }
 }
