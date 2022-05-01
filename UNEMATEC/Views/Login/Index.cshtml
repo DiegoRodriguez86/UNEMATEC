@@ -2,6 +2,40 @@
 @{
     ViewBag.Title = "Index";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login | Unematec</title>
 
-<h2>Index</h2>
+    <link rel="stylesheet" href="main.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="formLogin">
+            <div id="colorbox" style="background-color: #192a56;">
+            </div>
+            <div id="infoBox">
+                <h2>BIENVENIDO</h2>
+                <h3>INICIAR SESIÓN</h3>
+                <form method="POST" action="" id="frmLogin" enctype="multipart/form-data">
+                    <label for="mail">Correo Electrónico</label>
+                    <input type="email" name="mail" id="mail" placeholder="Correo electrónico" required>
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                    <p>Si aún no tienes cuenta, regístrate <a href="" style="text-decoration: underline;"> aquí </a>.</p> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
 
