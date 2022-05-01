@@ -2,6 +2,95 @@
 @{
     ViewBag.Title = "Index";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SignUp | Unematec</title>
 
-<h2>Index</h2>
+    <link rel="stylesheet" href="main.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
+</head>
+<body>
+    <div id="container">
+        <div id="formSignUp">
+            <div id="colorline">
+            </div>
+            <div id="formBox">
+                <div id="divFormSU">
+                    <h2>HOLA, BIENVENIDO/A</h2>
+                    <form method="POST" action="" id="frmSignUp" enctype="multipart/form-data">
+                        <h3>CREA TU CUENTA PARA CONTINUAR</h3>
+                        <div class="suField">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre(s)" required>
+                        </div>
+                        <div class="suField">
+                            <label for="apPat">Apellido Paterno</label>
+                            <input type="text" name="apPat" id="apPat" placeholder="Apellido Paterno" required>
+                        </div>
+                        <div class="suField">
+                            <label for="apMat">Apellido Materno</label>
+                            <input type="text" name="apMat" id="apMat" placeholder="Apellido Materno">
+                        </div>
+                        <div class="suField">
+                            <label for="mail">Correo Electrónico</label>
+                            <input type="email" name="mail" id="mail" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="suField">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+                        </div>
+                        <div class="suField">
+                            <label for="RFC">RFC</label>
+                            <input type="text" name="RFC" id="RFC" placeholder="RFC" maxlength="13" max="13" onchange="validaRFC()" required>
+                        </div>
+                        <div class="suField">
+                            <label for="CURP">CURP</label>
+                            <input type="text" name="CURP" id="CURP" placeholder="CURP" maxlength="18" max="18" onchange="validaCURP()" required>
+                        </div>
+                        <div class="suField">
+                            <label for="tel">Teléfono</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Número Telefónico" maxlength="10" max="10" step="1">
+                        </div>
+                        <button type="submit" id="btnReg">Registrarme</button>
+                    </form>
+                    <script type="text/javascript">
+                        function validaRFC(){
+                            var rfc = document.getElementById("RFC").value;
+                            if(rfc.length < 13){
+                                alert("RFC inválido");
+                                $("#RFC").css({"border":"1px solid red","background-color":"rgb(255,0,0,.2)"});
+                                document.getElementById("btnReg").disabled = true;
+                                document.getElementById("btnReg").style.cursor = "not-allowed";
+                            }else{
+                                $("#RFC").css({"border":"1px solid green","background-color":"rgb(0,128,0,.2)"});
+                                document.getElementById("btnReg").disabled = false;
+                                document.getElementById("btnReg").style.cursor = "pointer";
+                            }
+                        }
+                        function validaCURP(){
+                            var rfc = document.getElementById("CURP").value;
+                            if(rfc.length < 18){
+                                alert("CURP inválido");
+                                $("#CURP").css({"border":"1px solid red","background-color":"rgb(255,0,0,.2)"});
+                                document.getElementById("btnReg").disabled = true;
+                                document.getElementById("btnReg").style.cursor = "not-allowed";
+                            }else{
+                                $("#CURP").css({"border":"1px solid green","background-color":"rgb(0,128,0,.2)"});
+                                document.getElementById("btnReg").disabled = false;
+                                document.getElementById("btnReg").style.cursor = "pointer";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
