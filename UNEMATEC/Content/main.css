@@ -71,7 +71,7 @@ input#pass{
     border-radius: 10px;
     font-size: 1em;
 }
-button#btnInises {
+form#frmLogin button{
     width: 63%;
     height: 2.75em;
     margin: 2.5em auto .5em;
@@ -81,12 +81,12 @@ button#btnInises {
     box-sizing: border-box;
     box-shadow: none;
     cursor: pointer;
-    border: none;
+	border: none;
     outline: none;
     font-size: 1em;
 }
-button#btnInises:hover {
-    filter: opacity(.7);
+form#frmLogin button:hover{
+    filter:opacity(.7);
 }
 /*  END LOGIN */
 /*    INICIO REGISTRO */
@@ -249,4 +249,22 @@ button#btnDropdown1:active{
 	background-color: rgba(87, 87, 86, 0.1) !important;
 	opacity: 0.5% !important;
     color: #575756 !important; 
+}
+div.mainUser{
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+div#payLogin h3{
+    margin: 2em auto 1em;
+    padding: 0;
+    font-size: 2em;
+}
+div#infoPago{
+    border-right: 1px solid #d3d3d3;
+}
+div#divPaypal{
+    width: 45%;
+    margin: 0 auto;
 }
