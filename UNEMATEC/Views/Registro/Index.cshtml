@@ -44,12 +44,12 @@
                         </div>
                         <div class="suField">
                             <label for="mail">Correo Electrónico</label>
-                            @Html.TextBoxFor(model => model.Correo, htmlAttributes: new { @id = "mail", placeholder = "Correo electrónico", required = "true", type="email" })
+                            @Html.TextBoxFor(model => model.Correo, htmlAttributes: new { @id = "mail", placeholder = "Correo electrónico", required = "true", type = "email" })
                             @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
                         </div>
                         <div class="suField">
                             <label for="pass">Contraseña</label>
-                            @Html.TextBoxFor(model => model.Password, htmlAttributes: new { @id = "pass", placeholder = "Contraseña", required = "true", type="password" })
+                            @Html.TextBoxFor(model => model.Password, htmlAttributes: new { @id = "pass", placeholder = "Contraseña", required = "true", type = "password" })
                             @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                         </div>
                         <div class="suField">
