@@ -34,35 +34,43 @@
                 </ul>
             </div>
         </nav>
-        <div id="divContent">
+    <div id="divContent">
+        <div class="mainUser" id="infoPago">
             <h2>Aún no hay pagos registrados.</h2>
             <p>Aquí podrás ver el detalle de los pagos realizados.</p>
         </div>
+        <div class="mainUser" id="payLogin">
+            <h3>Inicia sesión en PayPal</h3>
+            <div id="divPaypal">
+                <div class="text-center">
+                    <div id="paypal-button-container-P-68321642VB210481BMJXTHIY"></div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=AXPTYF58bXgWYwwG3bzABpIdS-ocU6hASeQrfSKKzH-fMnoFUmim611FalBvMz4l-ywPGbO1Kj5CRF2a&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'pill',
+                                color: 'blue',
+                                layout: 'vertical',
+                                label: 'subscribe'
+                            },
+                            createSubscription: function (data, actions) {
+                                return actions.subscription.create({
+                                    /* Creates the subscription */
+                                    plan_id: 'P-68321642VB210481BMJXTHIY'
+                                });
+                            },
+                            onApprove: function (data, actions) {
+                                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                            }
+                        }).render('#paypal-button-container-P-68321642VB210481BMJXTHIY'); // Renders the PayPal button
+                    </script>
+                </div>
 
-        <div class="line"></div>
-
-        <div class="text-center">
-            <div id="paypal-button-container-P-68321642VB210481BMJXTHIY"></div>
-            <script src="https://www.paypal.com/sdk/js?client-id=AXPTYF58bXgWYwwG3bzABpIdS-ocU6hASeQrfSKKzH-fMnoFUmim611FalBvMz4l-ywPGbO1Kj5CRF2a&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-            <script>
-                paypal.Buttons({
-                    style: {
-                        shape: 'pill',
-                        color: 'blue',
-                        layout: 'vertical',
-                        label: 'subscribe'
-                    },
-                    createSubscription: function (data, actions) {
-                        return actions.subscription.create({
-                            /* Creates the subscription */
-                            plan_id: 'P-68321642VB210481BMJXTHIY'
-                        });
-                    },
-                    onApprove: function (data, actions) {
-                        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-                    }
-                }).render('#paypal-button-container-P-68321642VB210481BMJXTHIY'); // Renders the PayPal button
-            </script>
+            </div>
         </div>
+
+    </div>
+
+    <div class="line"></div>
 </body>
 </html>
