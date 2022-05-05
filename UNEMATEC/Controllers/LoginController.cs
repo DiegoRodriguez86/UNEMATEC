@@ -24,11 +24,11 @@ namespace UNEMATEC.Controllers
             int acces = cl.GetAcceso(model);
             if (acces !=0)
             {
+                CreaVariablesSession(acces);
                 return RedirectToAction("Index", "InfoSindicalizados", new { model = model });
             }
             else
             {
-                CreaVariablesSession(acces);
                 return RedirectToAction("Index");
             }
         }

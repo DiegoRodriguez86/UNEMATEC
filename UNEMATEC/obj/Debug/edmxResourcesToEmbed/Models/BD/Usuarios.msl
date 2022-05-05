@@ -4,17 +4,18 @@
     <EntitySetMapping Name="Usuarios">
       <EntityTypeMapping TypeName="UNEMATECModel.Usuarios">
         <MappingFragment StoreEntitySet="Usuarios">
-          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
-          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
-          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
-          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="RFC" ColumnName="RFC" />
-          <ScalarProperty Name="CURP" ColumnName="CURP" />
-          <ScalarProperty Name="TelefonoCelular" ColumnName="TelefonoCelular" />
-          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+          <ScalarProperty Name="IdSuscripcionPayPal" ColumnName="IdSuscripcionPayPal" />
           <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+          <ScalarProperty Name="TelefonoCelular" ColumnName="TelefonoCelular" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

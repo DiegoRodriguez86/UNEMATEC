@@ -25,5 +25,6 @@ namespace UNEMATEC.Models.BD
         public string TelefonoCelular { get; set; }
         public int IdEstatus { get; set; }
         public System.DateTime FechaCaptura { get; set; }
+        public string IdSuscripcionPayPal { get; set; }
     }
 }

@@ -88,3 +88,5 @@ C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\obj\Debug\UNEMATEC.c
 C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\obj\Debug\UNEMATEC.csproj.CopyComplete
 C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\obj\Debug\UNEMATEC.dll
 C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\obj\Debug\UNEMATEC.pdb
+C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\bin\RestSharp.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\UNEMATEC\UNEMATEC\bin\RestSharp.xml

@@ -37,5 +37,14 @@ namespace UNEMATEC.Models.Core
                 return 0;
             }
         }
+
+        public Usuarios GetUsuarioById(int IdUsuario)
+        {
+            using (UNEMATECEntities1 ctx = new UNEMATECEntities1())
+            {
+                var query = ctx.Usuarios.Where(p => p.IdUsuario == IdUsuario && p.IdEstatus == 1).First();
+                return query;
+            }
+        }
     }
 }

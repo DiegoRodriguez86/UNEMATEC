@@ -15,6 +15,7 @@
     <Property Name="TelefonoCelular" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="IdEstatus" Type="int" Nullable="false" />
     <Property Name="FechaCaptura" Type="datetime" Nullable="false" />
+    <Property Name="IdSuscripcionPayPal" Type="nvarchar" MaxLength="500" />
   </EntityType>
   <EntityContainer Name="UNEMATECModelStoreContainer">
     <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
