@@ -167,8 +167,24 @@ button#btnPayments{
     font-size: 1em;
     
 }
+button#btnGoBack{
+    width: 10%;
+    height: 3em;
+    margin: 2.5em auto .5em;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #192a56;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+	border: none;
+    outline: none;
+    font-size: 1em;
+
+}
 button#btnReg:hover,
-button#btnPayments:hover{
+button#btnPayments:hover,
+button#btnGoBack:hover{
     filter:opacity(.7);
 }
 /*  FIN REGISTRO */
