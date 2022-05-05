@@ -71,7 +71,7 @@ input#pass{
     border-radius: 10px;
     font-size: 1em;
 }
-form#frmLogin button{
+button#btnInises{
     width: 63%;
     height: 2.75em;
     margin: 2.5em auto .5em;
@@ -85,7 +85,7 @@ form#frmLogin button{
     outline: none;
     font-size: 1em;
 }
-form#frmLogin button:hover{
+button#btnInises:hover{
     filter:opacity(.7);
 }
 /*  END LOGIN */
@@ -151,7 +151,8 @@ form#frmSignUp input{
     border-radius: 10px;
     font-size: 1em;
 }
-form#frmSignUp button{
+button#btnReg,
+button#btnPayments{
     width: 40%;
     height: 3em;
     margin: 2.5em auto .5em;
@@ -166,7 +167,24 @@ form#frmSignUp button{
     font-size: 1em;
     
 }
-form#frmSignUp button:hover{
+button#btnGoBack{
+    width: 10%;
+    height: 3em;
+    margin: 2.5em auto .5em;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #192a56;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+	border: none;
+    outline: none;
+    font-size: 1em;
+
+}
+button#btnReg:hover,
+button#btnPayments:hover,
+button#btnGoBack:hover{
     filter:opacity(.7);
 }
 /*  FIN REGISTRO */
@@ -267,4 +285,26 @@ div#infoPago{
 div#divPaypal{
     width: 45%;
     margin: 0 auto;
+}
+table#tblPayments{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+#tblPayments td, #tblPayments th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tblPayments tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#tblPayments tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+#tblPayments th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
 }

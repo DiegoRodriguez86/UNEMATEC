@@ -1,14 +1,13 @@
 @{
     Layout = null;
-}
-
+} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inicio | Unematec</title>
+    <title>Pagos Registrados | Unematec</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="~/Content/main.css">
@@ -33,45 +32,59 @@
                 </ul>
             </div>
         </nav>
-    <div id="divContent">
-        <div class="mainUser" id="infoPago">
-            <h2>Aún no hay pagos registrados.</h2>
-            <p>Aquí podrás ver el detalle de los pagos realizados.</p>
-            <p><b>NOTA: </b> Recuerda que es necesario tu pago</p>
-            <button id="btnPayments">Ver pagos</button>
+        <div id="divContent">
+            <h2>Historial de Pagos Realizados</h2>
+            <table id="tblPayments">
+                <tbody>
+                <tr style="background-color: #192a56; color:#FFFFFF">
+                <td>ID&nbsp;</td>
+                <td>Nombre&nbsp;</td>
+                <td>&nbsp;Referencia&nbsp;</td>
+                <td>Monto Total&nbsp;</td>
+                <td>&nbsp;Fecha de pago</td>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>Diego Rodr&iacute;guez&nbsp;</td>
+                <td>&nbsp;20220504-1a</td>
+                <td>$1,000.00&nbsp;</td>
+                <td>04/05/2022</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Diego Rodr&iacute;guez&nbsp;&nbsp;</td>
+                <td>&nbsp;20220505-2a&nbsp;</td>
+                <td>$1,500.00&nbsp;</td>
+                <td>05/05/2022&nbsp;</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>Diego Rodr&iacute;guez&nbsp;&nbsp;</td>
+                <td>&nbsp;20220506-3a&nbsp;</td>
+                <td>$2,000.00&nbsp;</td>
+                <td>06/05/2022&nbsp;</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td>Diego Rodr&iacute;guez&nbsp;&nbsp;</td>
+                <td>&nbsp;20220507-4a&nbsp;</td>
+                <td>$2,500.00&nbsp;</td>
+                <td>07/05/2022&nbsp;</td>
+                </tr>
+                <tr>
+                <td>5&nbsp;</td>
+                <td>Diego Rodr&iacute;guez&nbsp;&nbsp;</td>
+                <td>&nbsp;20220508-5a&nbsp;</td>
+                <td>$3,000.00&nbsp;</td>
+                <td>08/05/2022&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+            <button id="btnGoBack" onclick="history.back()">Regresar</button>
         </div>
-        <div class="mainUser" id="payLogin">
-            <h3>Inicia sesión en PayPal</h3>
-            <div id="divPaypal">
-                <div class="text-center">
-                    <div id="paypal-button-container-P-68321642VB210481BMJXTHIY"></div>
-                    <script src="https://www.paypal.com/sdk/js?client-id=AXPTYF58bXgWYwwG3bzABpIdS-ocU6hASeQrfSKKzH-fMnoFUmim611FalBvMz4l-ywPGbO1Kj5CRF2a&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-                    <script>
-                        paypal.Buttons({
-                            style: {
-                                shape: 'pill',
-                                color: 'blue',
-                                layout: 'vertical',
-                                label: 'subscribe'
-                            },
-                            createSubscription: function (data, actions) {
-                                return actions.subscription.create({
-                                    /* Creates the subscription */
-                                    plan_id: 'P-68321642VB210481BMJXTHIY'
-                                });
-                            },
-                            onApprove: function (data, actions) {
-                                alert(data.subscriptionID); // You can add optional success message for the subscriber here
-                            }
-                        }).render('#paypal-button-container-P-68321642VB210481BMJXTHIY'); // Renders the PayPal button
-                    </script>
-                </div>
-
-            </div>
-        </div>
-
     </div>
 
     <div class="line"></div>
+
 </body>
 </html>
